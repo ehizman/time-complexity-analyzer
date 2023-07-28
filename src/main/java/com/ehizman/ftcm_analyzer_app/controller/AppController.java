@@ -12,7 +12,7 @@ import java.io.IOException;
 
 @CrossOrigin(origins = "*")
 @Controller
-@RequestMapping("/app")
+@RequestMapping
 public class AppController {
     private final AppService appService;
 
@@ -20,7 +20,7 @@ public class AppController {
         this.appService = appService;
     }
 
-    @GetMapping("/index")
+    @GetMapping("/")
     public String index(){
         return "index";
     }

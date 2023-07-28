@@ -7,7 +7,7 @@
     <body>
         <h1>Function Time Complexity Analyzer</h1>
         <label id = "input" for="input-field"></label><textarea id="input-field" rows="5" style="background-color: white; color: black;"></textarea>
-        <button onclick="check()">Analyze</button>
+        <button onclick="check()">Click To Analyze</button>
 
         <label id="time_complexity_label" for="response-box">Time Complexity</label><textarea id="response-box"></textarea>
 
@@ -40,7 +40,7 @@
                 };
 
 
-                fetch('/app/calc', {
+                fetch('/calc', {
                     method: 'POST',
                     body: JSON.stringify(payload),
                     headers: {
